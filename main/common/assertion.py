@@ -12,3 +12,5 @@ def assertHTTPCode(response, codeList = None):
     if responseCode not in codeList:
         raise Exception('响应code不在列表中！')
 
+
+
