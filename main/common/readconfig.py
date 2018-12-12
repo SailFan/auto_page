@@ -19,7 +19,7 @@ REPORT_PATH = os.path.join(BASE_PATH, 'report')
 
 
 class Config:
-    def __init__(self, config = CONFIG_FILE, index=1, element = "home"):
+    def __init__(self, config = CONFIG_FILE):
             logging.warning('配置文件地址：',config)
             self.config = YamlReader(config).data
     def get(self, element, index):
